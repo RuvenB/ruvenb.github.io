@@ -1,0 +1,28 @@
+#d1::before{
+    content:'A Simple header';
+    display: block;
+    color:#111;
+    font-size: 32px;
+    font-weight: 400;
+}
+#d1::after{
+    content:'Here comes some simple content. It has to be a bit more text to see if it wraps somewhere and if there are some small limits to the amount of textes, that gets rendered there.'
+}
+#d2::before{
+    content: 'If you have tried to mark this text you will find that is not possible. There is HTML for it. All is done in the CSS. Which is of course the wring place for content. But is interesting that it is possible. I guess there is no way to put links in this, but images are quite easy:';
+}
+#d2::after{
+    display: block;
+    content: ' ';
+    background-image: url('/assets/img/sample.svg');
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+#d3::before{
+    content: '-'
+}
+#d3::after{
+    content:'A list is possible too';
+    margin-left:1em;
+}

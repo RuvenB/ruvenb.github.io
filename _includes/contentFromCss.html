@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/assets/css/contentFromCss1.css">
+<script>
+    function wechsel(){
+        document.body.querySelectorAll('link').forEach(function(l){
+            const href = l.getAttribute('href');
+            const url = href.match(/^(.+contentFromCss)(\d)[.]css$/);
+            if(url){
+                const neuNum = url[2] === '1' ? '2' : '1';
+                l.setAttribute('href', url[1] + neuNum + '.css');
+            }
+        });
+    }
+</script>
+<button onclick="wechsel()">
+    Toggle Content-CSS
+</button>
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+<div id="d4"></div>

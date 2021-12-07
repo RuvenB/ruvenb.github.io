@@ -1,0 +1,12 @@
+#d1::before{
+    content:'Now it is simply text.'
+}
+#d1::after{
+    content:' More Text after the before.'
+}
+#d2::before{
+    content: 'I am a bit out of ideas here, so the next div is not visible.';
+}
+#d3{
+    display: none
+}
