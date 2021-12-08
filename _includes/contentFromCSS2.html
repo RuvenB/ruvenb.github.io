@@ -1,0 +1,12 @@
+<button id="loadCSSBtn">
+    load CSS
+</button>
+<p id="targetP"></p>
+<script>
+    document.getElementById('loadCSSBtn').addEventListener('click', function(){
+        const rel = document.createElement('link');
+        rel.rel = 'stylesheet';
+        rel.href = '/assets/css/contentFromCSS3.css';
+        document.head.appendChild(rel);
+    });
+</script>
