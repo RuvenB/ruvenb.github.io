@@ -19,7 +19,7 @@ If there is a limit, it is beyond my creative writing abilities.
 Tested with Edge 96.0.1054.43 (Linewrapping sometimes out of place) and Firefox Nightly 97.0a1.
 
 ## Creating of String
-I simply let Javascript write the content.
+I simply let Javascript write the content. Function for padding from an [answer an Stackoverflow by Christian C. Salvadó](https://stackoverflow.com/a/2998874)
 
 {% highlight javascript %}
 const zeroPad = (num, places) => String(num).padStart(places, '0');
