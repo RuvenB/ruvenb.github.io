@@ -13,9 +13,21 @@ In the last post we changed the href ob the link per script. It works immediatel
 I thought it would be neccessary to change the zoom-factor of the body or something like this.
 
 # Next experiment
-With clicking in the button we add 100,000 * 11 Zeichen per `::after{content...}`.
+With clicking in the button we add 1,000,000 * 10 characters per `::after{content...}`.
 If there is a limit, it is beyond my creative writing abilities.
 
 Tested with Edge 96.0.1054.43 (Linewrapping sometimes out of place) and Firefox Nightly 97.0a1.
+
+## Creating of String
+I simply let Javascript write the content.
+
+{% highlight javascript %}
+const zeroPad = (num, places) => String(num).padStart(places, '0');
+var l = [];
+for(var i = 0; i<1000000; i++){
+    l.push(zeroPad(i,9));
+ }
+ l.join(' ');
+{% endhighlight %}
 
 {% include contentFromCss2.html %}
